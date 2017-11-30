@@ -1,0 +1,9 @@
+.section{
+    display: block;
+    width: 65%;
+    padding: 20px;
+    margin: 15px auto;
+    text-align:justify;
+    border: 2px outset;
+    background-color: #333	;
+}
