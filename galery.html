@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8"name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kezdőlap</title>
-    <link rel="stylesheet" type="text/css" href="menu.css">
-    <link rel="stylesheet" type="text/css" href="galery.css">
-    <link rel="stylesheet" type="text/css" href="alapok.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/menu.css">
+    <link rel="stylesheet" type="text/css" href="style/alapok.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+    <title>Kezdőlap</title>
 </head>
 <body>
 <header>
@@ -20,19 +18,33 @@
     </ul>
 </header>
 <section>
-    <div class="w3-content" style="max-width:800px">
-        <img alt="csengő" class="mySlides" src="kepek/DSC_9606.jpg" style="width:100%">
-        <img alt="lakat" class="mySlides" src="kepek/DSC_9003.jpg" style="width:100%">
-        <img alt="hold"class="mySlides" src="kepek/DSC_6420.jpg" style="width:100%" >
-        <img alt="tök" class="mySlides" src="kepek/DSC_9183.jpg" style="width:100%">
-    </div>
-    <div class="w3-center">
-        <div class="w3-section">
-            <button class="mynewclass" onclick="plusDivs(-1)">❮ Előző</button>
-            <button class="mynewclass" onclick="plusDivs(1)">Következő ❯</button>
+    <h2>Galéria</h2>
+    <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides" src="kepek/DSC_9606.jpg" style="width:100%">
+        <img class="mySlides" src="kepek/DSC_9003.jpg" style="width:100%">
+        <img class="mySlides" src="kepek/DSC_6420.jpg" style="width:100%">
+        <img class="mySlides" src="kepek/DSC_9183.jpg" style="width:100%">
+        <div class="w3-row-padding w3-section">
+            <div style="display: inline-block;">
+                <img class="demo w3-opacity"
+                     src="kepek/DSC_9606_mini.jpg" onclick="currentDiv(1)">
+            </div>
+            <div style="display: inline-block;">
+                <img class="demo w3-opacity"
+                     src="kepek/DSC_9003_mini.jpg" onclick="currentDiv(2)">
+            </div>
+            <div style="display: inline-block;">
+                <img class="demo w3-opacity"
+                     src="kepek/DSC_6420_mini.jpg" onclick="currentDiv(3)">
+            </div>
+            <div style="display: inline-block;">
+                <img class="demo w3-opacity"
+                     src="kepek/DSC_9183_mini.jpg" onclick="currentDiv(4)">
+            </div>
         </div>
     </div>
-    <script src="gallery.js"></script>
+
+    <script src="js/gallery.js"></script>
 </section>
 <footer>
     <p>
